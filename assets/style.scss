@@ -1,0 +1,174 @@
+/* style.scss */
+:root {
+  --colorB: #222222;
+  --colorD: #464646;
+  --colorE: #ff4d52;
+  --colorP: #264bc7;
+  --borderLine : 1px solid #d8d8d8;
+}
+html, body { -webkit-text-size-adjust:none;  
+	font-family:  Malgun Gothic, dotum, "돋움", Arial, AppleGothic, Sans-serif; 
+	font-size: 62.5%;color: var(--colorD); line-height: 1.3; letter-spacing: -0.2px; 
+}  /*글자자동조절방지*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0;  }
+ul, li, ol { list-style:none;  }
+img, fieldset , video{ border:0;  vertical-align:top; }
+input, textarea, select { vertical-align:middle; resize:none; position:relative; -webkit-border-radius:0; border-radius:0; }	
+button { border:0 none; background:transparent; cursor:pointer; }		
+caption, legend, .hide  { position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; overflow:hidden; text-indent:-9999px; }
+table { border-collapse:collapse; border-spacing:0; line-height:1.5}
+table caption.tit { width:100%; height:auto; margin:20px 0; font-size:20px; font-weight:bold; text-indent:0; visibility:visible}
+a:link, a:visited  { text-decoration:none; }
+a:active, a:hover, a:focus { text-decoration:none; }		
+ins{text-decoration:none}
+del{text-decoration:line-through}
+/* HTML5 display-role reset for older browsers   */	
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; box-sizing: border-box; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+body, li, dt, dd, td, th, div, p, input, textarea,  button, option, 
+h1, h2, h3, h4, h5, h6, legend, figcaption { padding: 0; vertical-align:middle; box-sizing: border-box; }
+a, span, i, em, input, button, samp { font-family: inherit; color:inherit; font-size: inherit; font-weight: inherit; line-height: inherit; font-style: normal;}
+strong, b { font-family: inherit; color:inherit; font-size: inherit; line-height: inherit; font-style: normal; }
+i, em { font-style: normal; }
+
+html,body,.wrapper {min-height: 100%; width: 100%; }
+
+/* ========================== text */
+.h1 { font-size: 2.5rem; font-weight: bold;   color: var(--colorB); } 
+.h2 { font-size: 2.3rem; font-weight: bold;   color: var(--colorB); } 
+.h3 { font-size: 2.0rem; font-weight: bold;   color: var(--colorB); } 
+.h4 { font-size: 1.8rem; font-weight: bold;   color: var(--colorB); } 
+.h5 { font-size: 1.5rem; font-weight: bold;   color: var(--colorB); } 
+.h6 { font-size: 1.3rem; font-weight: normal; color: var(--colorB); } 
+.h1, .h2, .h3, .h4, .h5 {
+  em { color: var(--colorP); }
+}
+a.link_line:link, .link_line { text-decoration: underline; }
+
+/* ==========================  title */
+.main-title { position: relative; margin-bottom: 50px;
+  .h1   {  }
+  .desc {  }
+}
+
+
+/* ==========================  text item */
+.text-notice    { display: block;
+  font-size:1.3rem; font-weight: normal;  
+  line-height: 1.25; letter-spacing: -0.5px; font-style: normal;}
+.text-muted     { }
+
+/* ==========================  비율 default : 16:9 */
+.img-ratio {position: relative; width: 100%; height: 0; 
+  padding-bottom: 56.25%; text-align: center;  
+}
+  /* ==========================  정열  */
+  .img-align { position: absolute; right: 0; left: 0;
+    vertical-align: middle;  width: auto;  height: 100%;
+    text-align: center; font-size: 0; overflow: hidden;
+    &::before { content: ''; display: inline-block;  height: 100%; width: 0;
+      vertical-align: middle; font-size: 0;
+    }
+    img { display: inline-block; 
+      height: auto; width: auto; max-width: 100%; max-height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+
+
+
+/* ========================== typo list */
+ol, ul { 
+  &.mt_sm { >li + li {margin-top: 10px; }}
+  &.mt_md { >li + li {margin-top: 20px; }}
+}
+.mark_char_item { position: relative; padding-left: 0.7em; 
+  &::before { content: "-"; display: inline-block; text-indent: -.7em; } 
+}
+.mark_char-list {
+  >li { position: relative; padding-left: 0.7em; 
+    &::before { content: "-"; display: inline-block; text-indent: -.7em; } 
+  }
+}
+
+.mark_item { position: relative; padding-left: 1em; text-indent: -1em;  }
+.mark-list {
+  >li { position: relative; padding-left: 1em; text-indent: -1em;  }
+}
+
+
+.mark_dot-list{
+  >li { position: relative; padding-left: 0.8em; 
+    &:after { content: ""; display: block; width: 2px; height: 2px; 
+      position: absolute; top:9px; left: 0; 
+      background-color: --colorD;  
+    }
+  }   
+}
+
+
+
+
+
+// 데이터없음.
+.data-empty{ 
+  padding: 50px 0 50px !important; border: var(--borderLine) ; 
+  text-align: center;
+  .txt_empty {margin-top: 35px;margin-bottom: 35px; 
+      font-weight: 700;font-size: 18px;color: #222222;
+  }
+}
+.mCustomScrollBox { padding-right:0px;} 
+.mCustomScrollbar.pr0 > .mCustomScrollBox {padding-right:0px;}
+
+
+/* ========================== 약관 내용 */
+.terms_contents { padding: 0;  line-height: 1.5; font-size: 1.4rem; color: var(--colorD);
+
+	.h1 { font-size: 20px; color: var(--colorB); font-weight: bold;}
+	.h2 { font-size: 18px; color: var(--colorB); font-weight: bold;}
+	.h3 { font-size: 16px; color: var(--colorB); font-weight: bold;}
+	div.div{ margin-bottom: 2rem; }
+
+	p { margin-bottom: 25px; font-size: 1.4rem;font-weight: normal; line-height: 1.5;
+      strong{ color: var(--colorB); }
+    }
+  ul { li {line-height: 1.5; font-size: 1.4rem;}} 
+	ol { padding: 0 0 10px 0px;  list-style: auto; position: relative;
+		li { list-style: auto;  position: relative;
+      list-style-position: inside;
+      text-indent: -1rem; padding-left: 1rem; 
+      font-size: 1.4rem; line-height: 1.5;
+      div, p {margin-left: 1.5rem;}
+      
+    }
+	}
+    ul.indent-list { padding: 0 0 10px 0px;
+		li { text-indent: -18px;padding-left: 18px; font-size: 14px; line-height: 1.5;}
+	}
+	mark, .mark { color:#5aafe6; background-color: transparent;}
+    
+  /* ========================== table_terms */
+  .table_terms {  width:100%;
+    >thead >tr >th { border:1px solid #e1e1e1;padding: 5px 10px; font-size:14px; font-weight: 700; color: var(--colorB); text-align: center; background: #f8f8f8;
+    }
+    >tbody >tr {
+      >th { border:1px solid #e1e1e1;padding: 5px 10px; font-size:14px; font-weight: 700; color: var(--colorB); text-align: center; background: #f8f8f8;
+      }
+      >td {
+        border: 1px solid #e1e1e1; padding: 5px 10px; font-size:14px; color: var(--colorB); 
+        text-align: center;
+        a {font-size:14px; }
+        .font_red { color:var(--colorE); }    
+        li { font-size: 14px; }
+      }
+      &.rowspan >td{
+          &:first-child {border-left: 1px solid #e1e1e1;}
+      }
+    }
+  }
+}
+
+
