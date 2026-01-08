@@ -1,0 +1,249 @@
+{
+  "id": 11,
+  "name": "증조 할아버지",
+  "birthday": "",
+  "nickname": "증조부",
+  "gender": "male",
+  "spouse": {
+    "id": 12,
+    "name": "증조 할아버지",
+    "birthday": "",
+    "nickname": "증조모",
+    "gender": "female",
+    "children": [],
+    "parent": null
+  },
+  "children": [
+    {
+      "id": 9,
+      "name": "할아버지",
+      "birthday": "",
+      "nickname": "조부",
+      "gender": "male",
+      "spouse": {
+        "id": 10,
+        "name": "할머니",
+        "birthday": "",
+        "nickname": "조모",
+        "gender": "female",
+        "children": [],
+        "parent": null
+      },
+      "children": [
+        {
+          "id": 16,
+          "name": "큰 아버지",
+          "birthday": "",
+          "nickname": "백부",
+          "gender": "male",
+          "spouse": {
+            "id": 17,
+            "name": "큰 어머니",
+            "birthday": "",
+            "nickname": "백모",
+            "gender": "female",
+            "children": [],
+            "parent": null
+          },
+          "children": [
+            {
+              "id": 18,
+              "name": "사촌형",
+              "birthday": "",
+              "nickname": "종형제",
+              "gender": "male",
+              "spouse": null,
+              "children": [
+                {
+                  "id": 26,
+                  "name": "조카",
+                  "birthday": "",
+                  "nickname": "",
+                  "gender": "male",
+                  "spouse": null,
+                  "children": [],
+                  "parent": null,
+                  "order": 0
+                },
+                {
+                  "id": 27,
+                  "name": "조카딸",
+                  "birthday": "",
+                  "nickname": "",
+                  "gender": "female",
+                  "spouse": null,
+                  "children": [],
+                  "parent": null,
+                  "order": 1
+                }
+              ],
+              "parent": null,
+              "order": 0
+            },
+            {
+              "id": 19,
+              "name": "사촌누나",
+              "birthday": "",
+              "nickname": "종자매",
+              "gender": "female",
+              "spouse": null,
+              "children": [],
+              "parent": null,
+              "order": 0
+            }
+          ],
+          "parent": null,
+          "order": 0
+        },
+        {
+          "id": 2,
+          "name": "아버지",
+          "birthday": "",
+          "nickname": "",
+          "gender": "male",
+          "spouse": {
+            "id": 3,
+            "name": "어머니",
+            "birthday": "",
+            "nickname": "",
+            "gender": "female",
+            "children": [],
+            "parent": null
+          },
+          "children": [
+            {
+              "id": 4,
+              "name": "형",
+              "birthday": "",
+              "nickname": "",
+              "gender": "male",
+              "spouse": null,
+              "children": [],
+              "parent": null,
+              "order": 0
+            },
+            {
+              "id": 5,
+              "name": "누나",
+              "birthday": "",
+              "nickname": "",
+              "gender": "female",
+              "spouse": null,
+              "children": [],
+              "parent": null,
+              "order": 2
+            },
+            {
+              "id": 1,
+              "name": "나",
+              "birthday": "",
+              "nickname": "",
+              "gender": "male",
+              "spouse": {
+                "id": 13,
+                "name": "아내",
+                "birthday": "",
+                "nickname": "",
+                "gender": "female",
+                "children": [],
+                "parent": null
+              },
+              "children": [
+                {
+                  "id": 14,
+                  "name": "딸",
+                  "birthday": "",
+                  "nickname": "",
+                  "gender": "female",
+                  "spouse": null,
+                  "children": [],
+                  "parent": null,
+                  "order": 0
+                },
+                {
+                  "id": 15,
+                  "name": "아들",
+                  "birthday": "",
+                  "nickname": "",
+                  "gender": "male",
+                  "spouse": null,
+                  "children": [],
+                  "parent": null,
+                  "order": 0
+                }
+              ],
+              "parent": null,
+              "order": 3
+            },
+            {
+              "id": 7,
+              "name": "여동생",
+              "birthday": "",
+              "nickname": "",
+              "gender": "female",
+              "spouse": null,
+              "children": [],
+              "parent": null,
+              "order": 4
+            },
+            {
+              "id": 6,
+              "name": "남동생",
+              "birthday": "",
+              "nickname": "",
+              "gender": "male",
+              "spouse": null,
+              "children": [],
+              "parent": null,
+              "order": 5
+            }
+          ],
+          "parent": null,
+          "order": 1
+        },
+        {
+          "id": 20,
+          "name": "작은 아버지",
+          "birthday": "",
+          "nickname": "숙부",
+          "gender": "male",
+          "spouse": {
+            "id": 21,
+            "name": "작은 어머니",
+            "birthday": "",
+            "nickname": "숙모",
+            "gender": "female",
+            "children": [],
+            "parent": null
+          },
+          "children": [],
+          "parent": null,
+          "order": 2
+        },
+        {
+          "id": 23,
+          "name": "고모",
+          "birthday": "",
+          "nickname": "",
+          "gender": "female",
+          "spouse": {
+            "id": 25,
+            "name": "고모부",
+            "birthday": "",
+            "nickname": "",
+            "gender": "male",
+            "children": [],
+            "parent": null
+          },
+          "children": [],
+          "parent": null,
+          "order": 3
+        }
+      ],
+      "parent": null,
+      "order": 0
+    }
+  ],
+  "parent": null,
+  "order": 0
+}
